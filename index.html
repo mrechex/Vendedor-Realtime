@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-y" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asistente Inteligente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom Scrollbar for Webkit Browsers (Chrome, Safari, Edge) */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(17, 24, 39, 0.5); /* bg-gray-900/50 */
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: rgba(56, 189, 248, 0.6); /* sky-400 with opacity */
+        border-radius: 10px;
+        border: 2px solid transparent;
+        background-clip: content-box;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(56, 189, 248, 0.9);
+      }
+      /* Custom Scrollbar for Firefox */
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(56, 189, 248, 0.6) rgba(17, 24, 39, 0.5);
+      }
+      /* Animation for new suggestion glow */
+      @keyframes glow-fade {
+        0% { box-shadow: 0 0 12px rgba(56, 189, 248, 0.6); }
+        100% { box-shadow: 0 0 12px rgba(56, 189, 248, 0); }
+      }
+      .suggestion-new-glow {
+        animation: glow-fade 3s ease-out;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.12.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-transparent">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

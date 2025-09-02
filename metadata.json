@@ -1,0 +1,7 @@
+{
+  "name": "Asistente Inteligente Pro",
+  "description": "Una aplicación de asistente inteligente para mejorar la productividad. Transcribe reuniones, resume texto y responde preguntas basadas en el contexto de la pantalla, documentos o imágenes.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
